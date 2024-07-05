@@ -1,0 +1,127 @@
+.play {
+    margin: 0px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: black;
+    border: 3px solid blue;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 30px;
+   position: relative;
+   bottom: 20px;
+  }
+  body{
+    background-color: black;
+    font-family: "Comic Sans";
+    color: white;
+  }
+  .complete{
+    background-color: black;
+    color: white;
+    height: 240vh;
+  }
+  .para {
+    font-size: 20px;
+    padding: 30px;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 139, 0.8) 0%, 
+        rgba(0, 0, 139, 0.7) 20%, 
+        rgba(0, 0, 139, 0.6) 40%, 
+        rgba(0, 0, 139, 0.5) 60%, 
+        rgba(0, 0, 139, 0.4) 70%, 
+        rgba(0, 0, 139, 0.3) 80%, 
+        rgba(0, 0, 139, 0.2) 90%, 
+        rgba(0, 0, 139, 0.1) 95%, 
+        rgba(0, 0, 139, 0) 100%
+    );
+    color: white; /* Ensures text is visible on the gradient */
+/* Softens the edges to make it look less boxy */
+    position: relative; /* Needed for the drop animation */
+    overflow: hidden; /* Hide the overflowing content during the anim Center vertically */
+}
+  
+  .question {
+    border: 2px solid blue;
+    animation: drop 1s ease forwards;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(45, 12, 206, 0.1);
+  }
+  .boxx{
+    background-color: black;
+    color: white;
+    border: 2px solid blue;
+  }
+  .search{
+    background-color: blue;
+    border-radius: 2px;
+    border: 2px solid blue;
+    color: white;
+  }
+  .buttonContainer {
+    text-align: center;
+    margin-top: 20px;/* Adjust margin as needed */
+  }
+  .goBackButton{
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: white;
+  }
+  .paracontent {
+    animation: drop 1s ease forwards;
+    opacity: 0; /* Start invisible and fade in */
+}
+.whole{
+    animation: slideIn 2s forwards;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0; /* Start with invisible */
+        transform: translateY(20px); /* Start 20px below final position */
+    }
+    100% {
+        opacity: 1; /* End with fully visible */
+        transform: translateY(0); /* End at final position */
+    }
+}
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+  
+  .question h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .question h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .question div {
+    margin-bottom: 5px;
+  }
+  
+  .question input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .play {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+  

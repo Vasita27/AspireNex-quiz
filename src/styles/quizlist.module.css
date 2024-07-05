@@ -1,0 +1,96 @@
+.quizListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;/* Adjust height as needed */
+    background-color: black; /* Background color for the container */
+    color: white; 
+    text-align: center; /* Text color */
+  }
+  
+  .title {
+    font-size: 2rem; /* Example font size */
+    margin-bottom: 1rem;
+    text-align: left; /* Example margin */
+  }
+  
+.goplay{
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+}
+  .fetchButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem; /* Example font size */
+    background-color: blue; /* Example button background color */
+    color: white; /* Example button text color */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .quizList {
+    position: relative;
+    top:20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    border: 2px solid blue;
+    visibility: hidden;
+    padding: 10px;
+    animation: drop 4s ease forwards;
+    /* Center list items */
+  }
+  
+  .quizItem {
+    font-size: 1.2rem; /* Example font size */
+    margin-bottom: 0.5rem; 
+    text-align: center; /* Example margin */
+  }
+  .para {
+    font-size: 20px;
+    padding: 30px;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 139, 0.8) 0%, 
+        rgba(0, 0, 139, 0.7) 20%, 
+        rgba(0, 0, 139, 0.6) 40%, 
+        rgba(0, 0, 139, 0.5) 60%, 
+        rgba(0, 0, 139, 0.4) 70%, 
+        rgba(0, 0, 139, 0.3) 80%, 
+        rgba(0, 0, 139, 0.2) 90%, 
+        rgba(0, 0, 139, 0.1) 95%, 
+        rgba(0, 0, 139, 0) 100%
+    );
+    color: white; /* Ensures text is visible on the gradient */
+/* Softens the edges to make it look less boxy */
+    position: relative; /* Needed for the drop animation */
+    overflow: hidden; /* Hide the overflowing content during the anim Center vertically */
+}
+.paracontent {
+    animation: drop 1s ease forwards;
+    opacity: 0; /* Start invisible and fade in */
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.fade{
+    animation: slideIn 2s forwards;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0; /* Start with invisible */
+        transform: translateY(20px); /* Start 20px below final position */
+    }
+    100% {
+        opacity: 1; /* End with fully visible */
+        transform: translateY(0); /* End at final position */
+    }
+}

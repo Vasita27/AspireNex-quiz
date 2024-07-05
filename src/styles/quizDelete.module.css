@@ -1,0 +1,54 @@
+.quizTable {
+    width: 80%;
+    border-collapse: collapse;
+    color: white;
+    margin: 20px auto; /* Center the table horizontally */
+    animation: slideIn 2s forwards;
+  }
+  
+  .quizTable th,
+  .quizTable td {
+    border: 2px solid blue;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  
+  .deleteButton,
+  .editButton {
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px; /* Adjust margin as needed */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  }
+  
+  .deleteButton:hover,
+  .editButton:hover {
+    background-color: darkblue;
+    border-color: darkblue;
+  }
+  .buttonContainer {
+    text-align: center;
+    margin-top: 20px;/* Adjust margin as needed */
+  }
+  .goBackButton{
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: white;
+    animation: slideIn 2s forwards;
+  }
+  @keyframes slideIn {
+    0% {
+        opacity: 0; /* Start with invisible */
+        transform: translateY(20px); /* Start 20px below final position */
+    }
+    100% {
+        opacity: 1; /* End with fully visible */
+        transform: translateY(0); /* End at final position */
+    }
+}

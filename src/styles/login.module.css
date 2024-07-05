@@ -1,0 +1,61 @@
+.loginContainer {
+  background-color: black;
+  color: #ffffff;
+  height: 100vh;
+  display: flex; /* Use flexbox on the body */
+  justify-content: center; 
+  text-align: center;/* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  border: 2px solid blue;
+  padding: 40px;
+  box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row; /* Make the label and input sit side by side */
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 10px; /* Space between label and input */
+}
+
+#username,
+#password,
+#click {
+  padding: 10px;
+  margin: 0; /* Remove default margin */
+  border: 3px solid blue;
+  border-radius: 5px;
+  box-shadow: 0 0 10px blue;
+  outline: none;
+  background-color: black; 
+  color: white;
+  flex: 1; /* Make inputs take available space */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(45, 8, 211);
+  margin-top: 20px; /* Ensure some space between inputs and button */
+}
+
+.sign {
+  color: blue;
+  margin-top: 20px; /* Ensure some space between button and signup link */
+}

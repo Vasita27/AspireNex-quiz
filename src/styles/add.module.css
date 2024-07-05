@@ -1,0 +1,46 @@
+/* Example styles for input fields */
+.input-container {
+    margin-bottom: 20px; }
+  
+.input-label {
+    font-weight: bold;
+  }
+  
+ .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .bluebox {
+    width: 100%;
+    border: 2px solid blue;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px 0 rgba(11, 28, 205, 0.4); /* Adjust the shadow values for the desired glow */
+  }
+  
+  .que{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    font-family: "Comic Sans";
+    animation: slideIn 2s forwards;
+  }
+  @keyframes slideIn {
+    0% {
+        opacity: 0; /* Start with invisible */
+        transform: translateY(20px); /* Start 20px below final position */
+    }
+    100% {
+        opacity: 1; /* End with fully visible */
+        transform: translateY(0); /* End at final position */
+    }
+}
+  

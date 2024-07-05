@@ -1,0 +1,92 @@
+.homeContainer{
+    background-color: black;
+    color: #ffffff;
+    height: 100vh;
+    font-family: "Comic Sans";
+}
+.para {
+    font-size: 20px;
+    padding: 30px;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 139, 0.8) 0%, 
+        rgba(0, 0, 139, 0.7) 20%, 
+        rgba(0, 0, 139, 0.6) 40%, 
+        rgba(0, 0, 139, 0.5) 60%, 
+        rgba(0, 0, 139, 0.4) 70%, 
+        rgba(0, 0, 139, 0.3) 80%, 
+        rgba(0, 0, 139, 0.2) 90%, 
+        rgba(0, 0, 139, 0.1) 95%, 
+        rgba(0, 0, 139, 0) 100%
+    );
+    color: white; /* Ensures text is visible on the gradient */
+/* Softens the edges to make it look less boxy */
+    position: relative; /* Needed for the drop animation */
+    overflow: hidden; /* Hide the overflowing content during the anim Center vertically */
+}
+
+.paracontent {
+    animation: drop 1s ease forwards;
+    opacity: 0; /* Start invisible and fade in */
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.buttonContainer {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    align-items: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add space between the buttons */
+}
+
+.hb {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(45, 8, 211);
+    width: 100%; /* Full width buttons */
+    max-width: 300px; /* Limit button width */
+    opacity: 0; /* Start with buttons invisible */
+    transform: translateY(20px); /* Start with buttons 20px below their final position */
+    animation: slideIn 2s forwards; /* Apply slide-in animation */
+}
+
+/* Keyframes for slide-in effect */
+@keyframes slideIn {
+    0% {
+        opacity: 0; /* Start with invisible */
+        transform: translateY(20px); /* Start 20px below final position */
+    }
+    100% {
+        opacity: 1; /* End with fully visible */
+        transform: translateY(0); /* End at final position */
+    }
+}
+.container{
+    text-align: center;
+}
+.fadeInEffect {
+    animation: fadeInAnimation ease 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
