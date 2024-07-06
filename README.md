@@ -1,3 +1,10 @@
+Project Description: Quiz Website This project is a dynamic and interactive Quiz Website built using the MERN stack (MongoDB, Express.js, React, Node.js). The application allows users to create, search, and play quizzes, as well as view and manage their own quizzes. Key features of the website include:
+
+User Authentication: Users can sign up, log in, and log out securely. Authentication is implemented to ensure personalized user experiences and data protection. Quiz Creation: Authenticated users can create quizzes with multiple questions and options. The quizzes are stored in a MongoDB database. Quiz Search and Play: Users can search for quizzes by name and attempt them. The application dynamically fetches quiz data and displays questions with multiple-choice options. Score Calculation: After completing a quiz, users receive their score immediately, giving instant feedback on their performance. Quiz Management: Users can view a list of quizzes they have created, with options to edit or delete them. This is achieved through a user-friendly interface with interactive buttons. Responsive Design: The website is designed to be responsive, ensuring a seamless experience across various devices and screen sizes. Technical Stack: Frontend: React.js for building a responsive and interactive user interface. Backend: Node.js and Express.js for creating a robust and scalable server-side application. Database: MongoDB for efficient storage and retrieval of quiz data. Styling: CSS Modules for scoped and maintainable styles, ensuring a clean and organized codebase.
+
+How to Run? 1.Clone the repository 2.npm start for front end 3.Navigate to backend directory 4.nodemon index.js to connect it.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
